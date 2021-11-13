@@ -23,7 +23,7 @@ title: Fetch
     .then(function (arr) {
         let element = document.querySelector('#output').appendChild(document.createElement('table'))
         element.setAttribute("id", "fetch-table")
-        element.setAttribute("class", "tbl tbl-striped tbl-dark")
+        element.setAttribute("class", "table table-dark table-striped")
         element = element.appendChild(document.createElement('thead'))
         element = element.appendChild(document.createElement('tr'))
         for (let i = 0; i < arr.length; i++) { 
