@@ -13,11 +13,9 @@ layout: page
     .then(function (response) {
         console.log(response)
         var node = document.createElement(table)
-        var element = document.querySelector('#output').appendChild(node)
-    
+        var element = document.querySelector('#output').appendChild(node)  
         node = document.createElement(thead)
-        element = element.appendChild(node)
-    
+        element = element.appendChild(node)    
         node = document.createElement(tr)
         element = element.appendChild(node)
         for (const [key, value] of Object.entries(response)) {
