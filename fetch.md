@@ -7,7 +7,7 @@ title: Fetch
 [Home](README.md) 
 [About](about.md)
 
-```<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -23,6 +23,7 @@ title: Fetch
     .then(function (arr) {
         let element = document.querySelector('#output').appendChild(document.createElement('table'))
         element.setAttribute("id", "fetch-table")
+        element.setAttribute("class", "tbl tbl-striped tbl-dark")
         element = element.appendChild(document.createElement('thead'))
         element = element.appendChild(document.createElement('tr'))
         for (let i = 0; i < arr.length; i++) { 
@@ -42,4 +43,4 @@ title: Fetch
             }
         }
     })
-</script>```
+</script>
