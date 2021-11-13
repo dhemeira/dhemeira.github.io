@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div id="output"></div>
     <script>
         let testPromise = fetch('https://forexlaravel.herokuapp.com/api/test', {
             method: 'GET',            
@@ -18,7 +19,7 @@
             })
             .then(function (response) {
                 let outputtest = '<p>asd</p>'
-                document.querySelector('body').innerHtml = outputtest
+                document.querySelector('#output').innerHtml = outputtest
                 console.log(response)
                 let output = '<table><thead><tr>'
                 for (const [key, value] of Object.entries(response)) {
