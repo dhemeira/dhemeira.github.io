@@ -11,12 +11,12 @@ layout: page
         return response.json()
     })
     .then(function (arr) {
+        var element = document.querySelector('#output').appendChild(document.createElement('table'))
+        element = element.appendChild(document.createElement('thead'))
+        element = element.appendChild(document.createElement('tr'))
         for (int i=0; i < arr.length(); i++) {
             var response = arr.getJSONObject(i)
             console.log(response)
-            var element = document.querySelector('#output').appendChild(document.createElement('table'))
-            element = element.appendChild(document.createElement('thead'))
-            element = element.appendChild(document.createElement('tr'))
             for (const [key, value] of Object.entries(response)) {
                 console.log(key, value)
             }
