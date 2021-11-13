@@ -1,10 +1,10 @@
 ---
-title: Home
+title: Fetch
 ---
 
 # Fetch
 
-[Home page](README.md)
+[Home](README.md) 
 [About](about.md)
 
 <div id="output"></div>
