@@ -7,6 +7,7 @@ title: Fetch
 [Home](README.md) 
 [About](about.md)
 
+<link type="text/css" rel="stylesheet" href="style.css" />
 <div id="output"></div>
 <script>
     let testPromise = fetch('https://forexlaravel.herokuapp.com/api/test', {
