@@ -12,7 +12,14 @@ layout: page
     })
     .then(function (response) {
         console.log(response)
-        let output = '<table><thead><tr>'
+        var node = document.createElement(table)
+        var element = document.querySelector('#output').appendChild(node)
+    
+        node = document.createElement(thead)
+        element = element.appendChild(node)
+    
+        node = document.createElement(tr)
+        element = element.appendChild(node)
         for (const [key, value] of Object.entries(response)) {
             console.log(key, value)
         }
@@ -24,7 +31,7 @@ layout: page
             output += `<td>${value}</td>`
         }
         output += '</tr></tbody></table>'
-        var textNode = document.createTextNode(output);
-        document.querySelector('#output').appendChild( textNode );
+        var textNode = document.createTextNode(output)
+        document.querySelector('#output').appendChild( textNode )
     })
 </script>
