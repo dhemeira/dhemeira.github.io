@@ -11,8 +11,6 @@ layout: page
             return response.json()
         })
         .then(function (response) {
-            let outputtest = '<p>asd</p>'
-            document.querySelector('#output').innerHtml = outputtest
             console.log(response)
             let output = '<table><thead><tr>'
             for (const [key, value] of Object.entries(response)) {
@@ -26,7 +24,8 @@ layout: page
                 output += `<td>${value}</td>`
             }
             output += '</tr></tbody></table>'
-            document.querySelector('body').innerHtml = output
+            var textNode = document.createTextNode(output);
+            document.querySelector('#output').appendChild( textNode );
         })
 </script>
 
