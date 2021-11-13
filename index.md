@@ -1,5 +1,5 @@
 ---
-title: All repos
+title: Home
 layout: page
 ---
     <div id="output"></div>
