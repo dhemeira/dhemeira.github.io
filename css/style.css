@@ -1,0 +1,151 @@
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner img {
+    min-height: 200px; 
+    min-width: 500px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel a {
+    border-radius: 0;
+    background-color: #121212;
+    border-color: #0d6efd;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.navbar-nav>ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.navbar li a, .carousel a {
+    position: relative;
+    z-index: 1;
+}
+
+#carousel-control {
+    position: absolute;
+    top: 5px;
+    right: 5px; 
+    z-index: 2;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0px 0px 20px #000;
+}
+
+#carousel-control:hover {
+    color: #fff;
+}
+
+#carousel-control, #carousel-control:hover, #carousel-control:before, #carousel-control:after {
+    transition: all .25s;
+}
+
+.dropdown-menu-dark .dropdown-item:focus, .dropdown-menu-dark .dropdown-item:hover {
+    background-color: inherit;
+}
+
+.navbar li a:after, .carousel a:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #0d6efd;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navbar li a:hover:after, .carousel a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.navbar li a, .navbar-brand, .carousel a, .project-title {
+    color: #fff !important;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar li a,
+.navbar li a:after,
+.navbar li a:before, .carousel a::before, .carousel a:after, .carousel a {
+    transition: all .5s;
+}
+
+.container {
+    padding-top: 68px;
+    background-color: #1e1e1e;
+    padding-bottom: 12px;
+}
+
+body {
+    background-color: #121212;
+}
+
+.navbar {
+    background-color: #121212;
+}
+
+/* content hierarchy deepness */
+.level-1 {
+    background-color: #222222;
+    padding: 12px;
+}
+
+.level-2 {
+    background-color: #242424;
+    padding: 12px;
+}
+
+.level-3 {
+    background-color: #272727;
+    padding: 12px;
+}
+
+.level-4 {
+    background-color: #2c2c2c;
+    padding: 12px;
+}
+
+.level-5 {
+    background-color: #2e2e2e;
+    padding: 12px;
+}
+
+.level-6 {
+    background-color: #333333;
+    padding: 12px;
+}
+
+.level-7 {
+    background-color: #343434;
+    padding: 12px;
+}
+
+.level-8 {
+    background-color: #383838;
+    padding: 12px;
+}
+
+.color-primary {
+    color: #0d6efd;
+}
+
+.backcolor-primary {
+    background-color: #0d6efd;
+}
