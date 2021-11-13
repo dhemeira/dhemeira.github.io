@@ -1,6 +1,5 @@
 ---
 title: Home
-layout: page
 ---
 <div id="output"></div>
 <script>
