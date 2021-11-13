@@ -19,14 +19,14 @@ layout: page
             console.log(key, value)
         }
         for (const key of Object.keys(response)) {
-            element = element.appendChild(document.createElement('th'))
-            element.appendChild(document.createTextNode(`${key}`))
+            element.appendChild(document.createElement('th'))
+            document.querySelector('th').appendChild(document.createTextNode(`${key}`))
         }
         element = document.querySelector('table').appendChild(document.createElement('tbody'))
         element = element.appendChild(document.createElement('tr'))
         for (const value of Object.values(response)) {
-            element = element.appendChild(document.createElement('td'))
-            element.appendChild(document.createTextNode(`${value}`))
+            element.appendChild(document.createElement('td'))
+            document.querySelector('td').appendChild(document.createTextNode(`${value}`))
         }
     })
 </script>
