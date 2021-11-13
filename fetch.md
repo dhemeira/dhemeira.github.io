@@ -17,12 +17,11 @@ layout: page
         for (let i = 0; i < arr.length; i++) { 
             let response = arr[i]
             console.log(response)
-            for (const [key, value] of Object.entries(response)) {
-                console.log(key, value)
-            }
-            for (const key of Object.keys(response)) {
-                let temp = element.appendChild(document.createElement('th'))
-                temp.appendChild(document.createTextNode(`${key}`))
+            if(i == 0) {
+                for (const key of Object.keys(response)) {
+                    let temp = element.appendChild(document.createElement('th'))
+                    temp.appendChild(document.createTextNode(`${key}`))
+                }
             }
             element = document.querySelector('table').appendChild(document.createElement('tbody'))
             element = element.appendChild(document.createElement('tr'))
