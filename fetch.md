@@ -17,6 +17,7 @@ title: Fetch
     })
     .then(function (arr) {
         let element = document.querySelector('#output').appendChild(document.createElement('table'))
+        element.setAttribute("id", "fetch-table")
         element = element.appendChild(document.createElement('thead'))
         element = element.appendChild(document.createElement('tr'))
         for (let i = 0; i < arr.length; i++) { 
