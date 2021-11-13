@@ -1,3 +1,9 @@
-title: Dhemeira
+# basic options
+title: dhemeira
+author: dhemeira
+description: A wonderful site
+github_username:  dhemeira
 
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-cayman
