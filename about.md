@@ -4,5 +4,5 @@ title: About
 
 # About
 
-[Home page](README.md)
+[Home](README.md) 
 [Fetch](fetch.md)
