@@ -10,7 +10,9 @@
 
 <body>
     <script>
-        let testPromise = fetch('http://forexlaravel.herokuapp.com//api/test')
+        let testPromise = fetch('https://forexlaravel.herokuapp.com//api/test', {
+            method: 'GET',            
+        })
             .then(function (response) {
                 return response.json()
             })
