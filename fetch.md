@@ -31,7 +31,5 @@ layout: page
             output += `<td>${value}</td>`
         }
         output += '</tr></tbody></table>'
-        var textNode = document.createTextNode(output)
-        document.querySelector('#output').appendChild( textNode )
     })
 </script>
