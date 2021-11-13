@@ -17,7 +17,9 @@
                 return response.json()
             })
             .then(function (response) {
-                console.log(response)
+                for (const [key, value] of Object.entries(response)) {
+                    console.log(key, value);
+                }
             })
     </script>
 </body>
