@@ -12,22 +12,21 @@ layout: page
     })
     .then(function (response) {
         console.log(response)
-        var node = document.createElement('table')
-        var element = document.querySelector('#output').appendChild(node)  
-        node = document.createElement('thead')
-        element = element.appendChild(node)    
-        node = document.createElement('tr')
-        element = element.appendChild(node)
+        var element = document.querySelector('#output').appendChild(document.createElement('table'))
+        element = element.appendChild(document.createElement('thead'))
+        element = element.appendChild(document.createElement('tr'))
         for (const [key, value] of Object.entries(response)) {
             console.log(key, value)
         }
         for (const key of Object.keys(response)) {
-            output += `<th>${key}</th>`
+            element = element.appendChild(document.createElement('th'))
+            element.appendChild(document.createTextNode(`${key}`))
         }
-        output += '</tr></thead><tbody><tr>'
+        element = document.querySelector('table').appendChild(document.createElement('tbody'))
+        element = element.appendChild(document.createElement('tr'))
         for (const value of Object.values(response)) {
-            output += `<td>${value}</td>`
+            element = element.appendChild(document.createElement('td'))
+            element.appendChild(document.createTextNode(`${value}`))
         }
-        output += '</tr></tbody></table>'
     })
 </script>
