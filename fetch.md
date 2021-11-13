@@ -1,6 +1,12 @@
 ---
 title: Home
 ---
+
+[Home page](README.md)
+[About](about.md)
+
+# Fetch
+
 <div id="output"></div>
 <script>
     let testPromise = fetch('https://forexlaravel.herokuapp.com/api/test', {
