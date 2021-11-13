@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About
 ---
 
@@ -13,3 +12,4 @@ Reasons:
 ## Other thoughts
 
 This is great.
+[Home page](README.md)
