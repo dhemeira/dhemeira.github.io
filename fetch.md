@@ -15,7 +15,7 @@ layout: page
         element = element.appendChild(document.createElement('thead'))
         element = element.appendChild(document.createElement('tr'))
         for (let i = 0; i < arr.length; i++) { 
-            let response = arr.getJSONObject(i)
+            let response = arr[i]
             console.log(response)
             for (const [key, value] of Object.entries(response)) {
                 console.log(key, value)
