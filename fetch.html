@@ -41,6 +41,11 @@
         <div class="container">
             <div id="output"></div>
             <script>
+                fetch('https://forexlaravel.herokuapp.com/api/felhasznalok/10')
+        .then((response) => {
+            console.log(response.json())
+        })
+                
                 const testPromise = fetch('https://forexlaravel.herokuapp.com/api/test', {
                     method: 'GET',
                 })
