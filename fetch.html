@@ -41,10 +41,7 @@
         <div class="container">
             <div id="output"></div>
             <script>
-                fetch('https://forexlaravel.herokuapp.com/api/felhasznalok/', {
-                    method: 'POST',
-                    body: JSON.stringify('{api_token:"token_1a9s9d9"}'),
-                    })
+                fetch('https://forexlaravel.herokuapp.com/api/felhasznalok/')
                 .then((response) => {
                     console.log(response.json())
                 })
